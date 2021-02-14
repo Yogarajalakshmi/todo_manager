@@ -11,7 +11,55 @@
 </head>
 
 <body>
+  <main class="TodoMain">
 
+    <article>
+      <h1 class="TodoPage-Title">My Todo List</h1>
+      <section class="AddTodo">
+        <input class="AddTodo-text" type="text" placeholder="Next Remainder?">
+        <input class="AddTodo-data" type="date">
+        <input class="AddTodo-button" type="button" value="Add">
+      </section>
+
+      <section class="TodoSection">
+        <div class="TodoSection-Title">
+          <p class="TodoSection-TitleText">Due Today</p>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="checkbox">
+              Submit Project
+              <p class="TodoItemOverdue">Overdue</p>
+              <a class="TodoItem-delete">
+                <img src="trashcan.svg">
+              </a>
+            </label>
+          </li>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="checkbox">
+              Buy notebooks
+            </label>
+          </li>
+        </ul>
+      </section>
+
+      <section class="TodoSection">
+        <div class="TodoSection-Title">
+          <p class="TodoSection-TitleText">Due Tomorrow</p>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="checkbox">
+              Buy groceries
+            </label>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
 </body>
 
 </html>
